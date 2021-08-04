@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+      <style>  
+         .header {  
+            background:lightyellow;  
+            border: 1px solid #b9cd6d;  
+            color: Red;  
+            font-weight: bold;  
+         }  
+         .content {  
+            background: lightgreen;  
+            border: 1px solid #DDDDDD;  
+            color: Red;  
+         }  
+         #resizable { width: 150px; height: 150px; padding: 0.5em;  
+            text-align: center; margin: 0; }  
+      </style>  
+      <script>  
+         $(function() {  
+            $( "#resizable" ).resizable();  
+         });  
+      </script>  
+   </head>  
+  
+   <body>     
+      <div id="resizable" class="content">   
+         <h3 class="header">Nishanth</h3>  
+      </div>  
+</body>
+</html>

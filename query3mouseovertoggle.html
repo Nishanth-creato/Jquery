@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("#hide").on('mouseover',function(){  
+        $("#1").fadeToggle(100);
+    });
+    $("#hide2").on('mouseover',function(){  
+        $("#2").fadeToggle(100);
+    });
+    $("#hide3").on('mouseover',function(){  
+        $("#3").fadeToggle(100);
+    });
+});
+</script>  
+</head>  
+<body>  
+<p style="background-color: aqua;" id="1">  
+<b>Nishanth </b>
+</p>  
+<p style="background-color:blue;" id="2">  
+    <b>Nishanth </b>
+    </p>
+    <p style="background-color: red;" id="3">  
+        <b>Nishanth </b>
+        </p>
+<button id="hide">Hide</button>  
+<button id="hide2">Hide</button> 
+<button id="hide3">Hide</button> 
+</body>
+</html>

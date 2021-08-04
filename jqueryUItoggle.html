@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <style>
+         .toggler { width: 500px; height: 200px; }  
+         #button { padding: .5em 1em; text-decoration: none; }  
+         #effect { width: 240px; height: 155px; padding: 0.4em; position: relative; }  
+         #effect h3 { margin: 0; padding: 0.4em; text-align: center; }  
+    </style>
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+    <script>
+           $(function() {  
+            function runEffect() {  
+               $( "#effect" ).toggle('explode', 300);  
+            };  
+            $( "#button" ).click(function() {  
+               runEffect();  
+               return false;  
+            });  
+         });  
+    </script>
+     <div class="toggler">  
+      <div id="effect" class="ui-widget-content ui-corner-all">  
+         <h3 class="ui-widget-header ui-corner-all">Toggle</h3>  
+         <p>  
+         JavaTpoint provides easy and point to point learning of various tutorials such as   
+        Java Tutorial, Core Java Tutorial, Android, Design Pattern, JavaScript, AJAX, SQL, Python etc.  
+         </p>  
+      </div>  
+      </div>  
+      <a href="#" id="button" class="ui-state-default ui-corner-all">Togglemethod with explode effect</a>  
+</body>
+</html>

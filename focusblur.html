@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#1").on('focus',function(){
+                $("#1").css({
+                    backgroundColor:'yellow'
+                });
+            });
+            $("#1").on('blur',function(){
+                $("#1").css({
+                    backgroundColor:'green'
+                });
+            });
+        });
+    </script>
+    Name:<input type="text" placeholder="Enter your name here" id="1">
+    <br><br>
+    Email:<input type="text" placeholder="Enter your E-mail">
+</body>
+</html>
