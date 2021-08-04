@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<style>
+    #slider-range{
+        width: 300px;
+        margin-left: 200;
+        margin-top: 20px;
+        background-color: royalblue;
+    }
+    #amount{
+        font-weight: 400;
+        font-size: medium;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+    <script>
+         $( function() {
+         $( "#slider-range" ).slider({range: true ,min:18, max:60, values:[20, 30], slide: function(event, ui) {
+        $( "#amount" ).val( "Age " + ui.values[0] + "- Age " + ui.values[1]);
+      }
+    });
+  } );
+
+
+    </script>
+    <label for="amount"><b>Age Limit:</b></label>
+    <br><br>
+    <input type="text" id="amount"  style="border:0; color:blue; font-weight:bold;">
+    <div id="slider-range" style="background: red;"></div>
+</body>
+</html>
